@@ -6,7 +6,7 @@ def hello():
     return "Hello Worldes!"
 
 @application.route("/hello")
-def hello():
+def hellos():
     return "Hello da draussen!"
 
 if __name__ == "__main__":
