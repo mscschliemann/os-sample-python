@@ -1,9 +1,9 @@
-import mysql.connector
+import MySQLdb
 from flask import Flask
 
 application = Flask(__name__)
 
-cnx = mysql.connector.connect(user='root', password='',
+cnx = MySQLdb.connect(user='root', password='',
                               host='127.0.0.1',
                               database='sampledb')
 cnx.close()
