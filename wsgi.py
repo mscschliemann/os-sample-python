@@ -1,5 +1,12 @@
+import mysql.connector
 from flask import Flask
+
 application = Flask(__name__)
+
+cnx = mysql.connector.connect(user='root', password='',
+                              host='127.0.0.1',
+                              database='sampledb')
+cnx.close()
 
 @application.route("/")
 def hello():
